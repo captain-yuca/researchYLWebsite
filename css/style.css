@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -429,7 +429,24 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header nav ul li a:active, #fh5co-header nav ul li a:focus {
   outline: none;
   text-decoration: none;
+
 }
+
+#fh5co-header nav ul li ul.dropdown-menu li a:hover{
+  text-decoration: none;
+  color: #27e1ce;
+
+}
+
+#fh5co-header nav ul li ul.dropdown-menu li a:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 #fh5co-header nav ul li.cta {
   margin-left: 20px;
 }
@@ -456,7 +473,17 @@ h1, h2, h3, h4, h5, h6, figure {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
 }
+
 #fh5co-header nav ul li.active a:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#fh5co-header nav ul li a.active:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
@@ -1221,5 +1248,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .js .animate-box {
   opacity: 0;
 }
+
 
 /*# sourceMappingURL=style.css.map */
