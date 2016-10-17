@@ -72,13 +72,20 @@
 					<h1><a href="index.html">Laboratory of Materials Synthesis and Characterization</a></h1>
 					<nav role="navigation">
 						<ul>
-
-							<li><a href="home.html">Home</a></li>
-							<li><a href="ourteam.html">Our Team</a></li>
-							<li><a href="research.html">Research</a></li>
-							<li><a href="teaching.html">Teaching</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li class="cta"><a href="#">Get started</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="our-team.html">Our Team</a></li>
+							<!-- <li><a href="services.html">Services</a></li> -->
+							<!-- <li><a href="pricing.html">Pricing</a></li> -->
+							<li class="dropdown">
+								<a href="research.html">Research </a><a href="#" id="menu1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+									<li><a href="#">Materials Science</a></li>
+									<li><a href="#">Materials Engineering</a></li>
+									<li><a href="#">Liquid Materials</a></li>
+								</ul>
+							</li>
+							<li class="active"><a href="teaching.html">Teaching</a></li>
+							<li class="active"><a href="contact.html">Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>
