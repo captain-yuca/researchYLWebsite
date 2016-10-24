@@ -1,0 +1,20 @@
+.home {
+        height: 50vh;
+        background: #5cd65c;
+    }
+
+    :host(.homeContainer) {
+        display: inline-block;
+        /*position: fixed;*/
+        width: 100%;
+        -webkit-transition: all ease-in 0.5s;
+        transition: all ease-in 0.5s;
+    }
+
+    :host(.homeContainer.ng-enter) {
+        transform: rotateX(-180deg)
+    }
+
+    :host(.home.ng-enter-active) {
+        transform: rotateX(0deg)
+    }

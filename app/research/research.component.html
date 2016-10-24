@@ -1,0 +1,73 @@
+
+<aside id="fh5co-hero"><p></p>
+  <ks-swiper-container [options]="example1SwipeOptions">
+    <ks-swiper-slide *ngFor="let s of [1]">
+
+      <div class="swiper-slide slider-text" style="background: url(images/materials.jpg) no-repeat center center; background-size: cover; vertical-align: middle; text-align:center;">
+        <div style="display: inline-block; position:relative; top:35%;" class="slider-text-inner text-center">
+        <h2>Our Research</h2>
+        <p class="fh5co-lead" >Our current research happening in our labs. </p>
+      </div>
+      </div>
+    </ks-swiper-slide>
+    <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+  </ks-swiper-container>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next swiper-button-blue" (click)="moveNext()"></div>
+  <div class="swiper-button-prev swiper-button-blue" (click)="movePrev()"></div>
+
+</aside>
+
+<div id="fh5co-work-section" class="fh5co-light-grey-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+        <h2 style="margin-bottom: 20px;
+        font-weight: 700;">Current Research</h2>
+        <p>Click on one of them to see more information.</p>
+      </div>
+    </div>
+
+    <div *ngFor="let researchRow of researchRows" class="row">
+      <div *ngFor="let research of researchRow.myResearch" class="col-md-4">
+          <a data-toggle="modal" [attr.data-target]="'#'+research.id+'Modal'" class="item-grid text-center">
+            <img class="image" src="images/{{research.imageUrl}}.jpg">
+            <div class="v-align">
+              <div class="v-align-middle">
+                <h3 class="title">{{research.researchName}}</h3>
+                <h5 class="category">Machine #121</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="fh5co-testimony-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+        <h2>Statistics</h2>
+        <p>Here are some of our statistics. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-offset-0 to-animate text-center">
+
+                <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1S4nyyt8BPpkgzd132yvNKZV-h-QR8WDGSUIa7OrvCZ0/pubchart?oid=1233874286&amp;format=interactive"></iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fh5co-cta" style="background-image: url(images/materials.jpg);">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="col-md-12 text-center">
+      <h3>Any Questions?</h3>
+      <p><a routerLink="/contact-us" class="btn btn-primary btn-outline with-arrow">Contact Us! <i class="icon-arrow-right"></i></a></p>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 ;(function () {
-	
+
 	'use strict';
 
 
@@ -36,33 +36,7 @@
 
 	};
 
-	var sliderMain = function() {
-		
-	  	$('#fh5co-hero .flexslider').flexslider({
-			animation: "fade",
-			slideshowSpeed: 5000,
-			directionNav: true,
-			start: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			},
-			before: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			}
 
-	  	});
-
-	  	$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
-	  	$(window).resize(function(){
-	  		$('#fh5co-hero .flexslider .slides > li').css('height', $(window).height());	
-	  	});
-
-	};
 
 	var centerBlock = function() {
 		$('.fh5co-section-with-image .fh5co-box').css('margin-top', -($('.fh5co-section-with-image .fh5co-box').outerHeight()/2));
@@ -75,7 +49,7 @@
 		setTimeout(function(){
 			$('.js-responsive > .v-align').css('height', $('.js-responsive > img').height());
 		}, 1);
-		
+
 		$(window).resize(function(){
 			setTimeout(function(){
 				$('.js-responsive > .v-align').css('height', $('.js-responsive > img').height());
@@ -94,10 +68,10 @@
 
     			$('body').removeClass('offcanvas-visible');
     			$('.js-fh5co-nav-toggle').removeClass('active');
-				
+
 	    	}
-	    
-	    	
+
+
 	    }
 		});
 
@@ -141,7 +115,7 @@
 
 
 	var toggleBtnColor = function() {
-		if ( $('#fh5co-hero').length > 0 ) {	
+		if ( $('#fh5co-hero').length > 0 ) {
 			$('#fh5co-hero').waypoint( function( direction ) {
 				if( direction === 'down' ) {
 					$('.fh5co-nav-toggle').addClass('dark');
@@ -152,7 +126,7 @@
 				if( direction === 'up' ) {
 					$('.fh5co-nav-toggle').removeClass('dark');
 				}
-			} , { 
+			} , {
 				offset:  function() { return -$(this.element).height() + 0; }
 			} );
 		}
@@ -165,7 +139,7 @@
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -188,9 +162,9 @@
 							el.removeClass('item-animate');
 						},  k * 200, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
@@ -211,10 +185,9 @@
 		});
 	};
 
-	
+
 	$(function(){
 		fullHeight();
-		sliderMain();
 		centerBlock();
 		responseHeight()
 		mobileMenuOutsideClick();
