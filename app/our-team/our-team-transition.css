@@ -1,0 +1,20 @@
+.team {
+        /*height: 50vh;*/
+        /*background: #5cd65c;*/
+    }
+
+    :host(.teamContainer) {
+        /*display: inline-block;*/
+        /*position: fixed;*/
+        width: 100%;
+        -webkit-transition: all ease-in 0.5s;
+        transition: all ease-in 0.5s;
+    }
+
+    :host(.teamContainer.ng-enter) {
+        transform: rotateZ(180deg)
+    }
+
+    :host(.team.ng-enter-active) {
+        transform: rotateZ(0deg)
+    }

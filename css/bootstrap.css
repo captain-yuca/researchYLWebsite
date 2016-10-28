@@ -101,7 +101,7 @@ sub {
   bottom: -0.25em;
 }
 
-img {
+description: ' ', {
   border: 0;
 }
 
@@ -262,11 +262,11 @@ th {
   }
 
   tr,
-  img {
+  description: ' ', {
     page-break-inside: avoid;
   }
 
-  img {
+  description: ' ', {
     max-width: 100% !important;
   }
 
@@ -361,17 +361,17 @@ figure {
   margin: 0;
 }
 
-img {
+description: ' ', {
   vertical-align: middle;
 }
 
-.img-responsive {
+.description: ' ',-responsive {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.img-rounded {
+.description: ' ',-rounded {
   border-radius: 6px;
 }
 

@@ -95,10 +95,35 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <a type="button" role="button" class="btn btn-primary with-arrow" (click)="onSelect(research)" data-dismiss="modal">More Information<i class="icon-arrow-right"></i></a>
+                  <a type="button" role="button" class="btn btn-primary with-arrow" (click)="onSelectResearch(research)" data-dismiss="modal">More Information<i class="icon-arrow-right"></i></a>
                   <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div *ngFor="let team of teamItems">
+  <div class="modal fade" [attr.id]="team.id + 'TeamModal'" tabindex="-1" role="dialog" [attr.aria-labelledby]="team.id +'ModalTeamLabel'">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h2 class="modal-title" [attr.id]="team.id + 'ModalTeamLabel'">{{team.Name}}</h2>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img src="images/{{team.imageUrl}}.jpg" alt="..." class="img-rounded" height="150" width="150">
+                      <br><br>
+                      <p>{{team.description}}</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
