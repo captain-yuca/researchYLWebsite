@@ -4,7 +4,7 @@ export const TEAM: Team[] = [
         id: 1,
         Name: 'Yang Li, Ph.D.',
         info: 'Associate Professor',
-        description: 'Be a GOOD STUDENT! ',
+        description: 'Be a GOOD STUDENT!',
         imageUrl: 'Yangli'
 
     },
@@ -12,7 +12,7 @@ export const TEAM: Team[] = [
         id: 2,
         Name: 'Jun-Qiang Lu, Ph.D.',
         info: 'Associate Professor',
-        description: 'No, be like the other team. ',
+        description: 'No, be like the other team.',
         imageUrl: 'jlu'
     },
     {
@@ -53,7 +53,7 @@ export const TEAM: Team[] = [
     {
         id: 8,
         Name: 'Shayny Ortiz',
-        info: 'Student',
+        info: 'Electical Engineering Student, Third Year',
         description: ' ',
         imageUrl: 'shayny'
     },
@@ -70,5 +70,12 @@ export const TEAM: Team[] = [
         info: 'Electrical Engineering Student, Third Year',
         description: ' ',
         imageUrl: 'daniel'
+    },
+    {
+        id: 11,
+        Name: 'Merwin Berrocales',
+        info: 'Mechanical Engineering Student, Third Year',
+        description: ' ',
+        imageUrl: 'merwin'
     }
 ];

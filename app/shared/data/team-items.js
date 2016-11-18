@@ -4,14 +4,14 @@ exports.TEAM = [
         id: 1,
         Name: 'Yang Li, Ph.D.',
         info: 'Associate Professor',
-        description: 'Be a GOOD STUDENT! ',
+        description: 'Be a GOOD STUDENT!',
         imageUrl: 'Yangli'
     },
     {
         id: 2,
         Name: 'Jun-Qiang Lu, Ph.D.',
         info: 'Associate Professor',
-        description: 'No, be like the other team. ',
+        description: 'No, be like the other team.',
         imageUrl: 'jlu'
     },
     {
@@ -52,7 +52,7 @@ exports.TEAM = [
     {
         id: 8,
         Name: 'Shayny Ortiz',
-        info: 'Student',
+        info: 'Electical Engineering Student, Third Year',
         description: ' ',
         imageUrl: 'shayny'
     },
@@ -69,6 +69,13 @@ exports.TEAM = [
         info: 'Electrical Engineering Student, Third Year',
         description: ' ',
         imageUrl: 'daniel'
+    },
+    {
+        id: 11,
+        Name: 'Merwin Berrocales',
+        info: 'Mechanical Engineering Student, Third Year',
+        description: ' ',
+        imageUrl: 'merwin'
     }
 ];
 //# sourceMappingURL=team-items.js.map
