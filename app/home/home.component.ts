@@ -23,9 +23,7 @@ export class HomeComponent implements AfterViewInit{
         loop: false,
         spaceBetween: 0,
         pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
+        paginationClickable: true
       };
     }
 

@@ -19,9 +19,7 @@ var HomeComponent = (function () {
             loop: false,
             spaceBetween: 0,
             pagination: '.swiper-pagination',
-            paginationClickable: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev'
+            paginationClickable: true
         };
     }
     HomeComponent.prototype.moveNext = function () {
@@ -41,7 +39,7 @@ var HomeComponent = (function () {
         core_1.Component({
             selector: 'home',
             templateUrl: 'app/home/home.component.html',
-            styleUrls: ['app/shared/swiper.css', 'css/style.css', 'app/home/home-transition.css'],
+            styleUrls: ['app/shared/swiper.css', 'css/style.css', 'app/home/home.component.css'],
             host: { 'class': 'ng-animate homeContainer' }
         }), 
         __metadata('design:paramtypes', [])

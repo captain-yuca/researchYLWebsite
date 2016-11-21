@@ -5,12 +5,11 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* Center slide text vertically */
 
-    /*display: -webkit-box;*/
+    display: -webkit-box;
     display: -ms-flexbox;
-    /*display: -webkit-flex;*/
-    /*display: flex;*/
+    display: -webkit-flex;
+    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -85,4 +84,6 @@
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead .icon-heart {
   color: #d9534f;
+}
+.swiper-button-blue{
 }
