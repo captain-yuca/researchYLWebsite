@@ -18,3 +18,9 @@
     :host(.research.ng-enter-active) {
         transform: rotateZ(0deg)
     }
+
+.white {
+
+      color: white
+
+}

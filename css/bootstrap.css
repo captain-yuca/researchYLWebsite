@@ -286,14 +286,6 @@ th {
     display: none;
   }
 
-  .box {
-      max-width: 100%;
-      display: inline-block;
-      vertical-align: middle;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-  }
 
   .btn > .caret,
   .dropup > .btn > .caret {

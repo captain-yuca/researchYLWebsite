@@ -6,8 +6,8 @@ import { TeamService } from './shared/team.services';
 import { ResearchService} from './shared/research.service';
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/app.component.html'
-    //styleUrls: []
+    templateUrl: 'app/app.component.html',
+    styleUrls: ['app/app.component.css']
 
 })
 export class AppComponent {
