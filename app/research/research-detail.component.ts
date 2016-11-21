@@ -2,6 +2,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params }   from '@angular/router';
 import { Location }                 from '@angular/common';
+import 'rxjs/add/operator/switchMap';
 
 import { ResearchService } from '../shared/research.service';
 import { Research } from '../shared/research';
@@ -13,23 +14,21 @@ import { Research } from '../shared/research';
 
 })
 export class ResearchDetailComponent implements OnInit {
-
+    research: Research;
     constructor(
         private researchService: ResearchService,
         private route: ActivatedRoute,
         private location: Location
     ) { }
     ngOnInit(): void {
-        this.route.params.forEach((params: Params) => {
-            let id = +params['id'];
-            this.researchService.getResearch(id)
-                .then(research => this.research = research);
-        });
-    }
+      this.route.params
+      .switchMap((params: Params) => this.researchService.getResearch(+params['id']))
+      .subscribe(research => this.research = research);
+
+                }
     goBack(): void {
         this.location.back();
     }
 
-    @Input()
-    research: Research;
+
 }
