@@ -25,28 +25,28 @@ exports.TEAM = [
         id: 4,
         Name: 'Manuel A. Baez Gonzalez',
         info: 'Computer Engineering Student, Third Year',
-        description: ' ',
+        description: 'Manuel is a passionate Computer Engineering Undergraduate Student. Current Vice-President of the IEEE UPRM Chapter and leader of the web development team. ',
         imageUrl: 'manuel'
     },
     {
         id: 5,
         Name: 'Angel D. Colon Rios',
         info: 'Electrical Engineering Student, Third Year',
-        description: ' ',
+        description: 'Angel has worked with NASA, he is great leader who encourages others to work hard and follow their dreams.',
         imageUrl: 'angel'
     },
     {
         id: 6,
         Name: 'Ernesto J. Arroyo Aviles',
         info: 'Electrical Engineering Student, Fourth Year',
-        description: ' ',
+        description: 'Ernesto is a multidisciplinary student, an electrical engineer with a passion for programming.',
         imageUrl: 'ernesto'
     },
     {
         id: 7,
         Name: 'Kevin Orta',
         info: 'Electrical Engineering Student, Third Year',
-        description: ' ',
+        description: 'Kevin has a passion and that passion is knowledge. He will always find the way to get the work done.',
         imageUrl: 'kevin'
     },
     {
@@ -60,7 +60,7 @@ exports.TEAM = [
         id: 9,
         Name: 'Adrian Soto',
         info: 'Computer Engineering Student, Third Year',
-        description: ' ',
+        description: 'Adrian is a team player, his focus is that everybody feels comfortable and energetic.',
         imageUrl: 'adrian'
     },
     {

@@ -15,7 +15,7 @@
             <a routerLink="/research" routerLinkActive="active" routerLinkActive="active">Research </a><a id="menu1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
               <div *ngFor="let research of researchItems">
-                <li><a (click)="onSelect(research)" >{{research.researchName}}</a></li>
+                <li> <a (click)="onSelect(research)"><p class="box">{{research.researchName}}</p></a></li>
               </div>
             </ul>
           </li>
@@ -69,7 +69,7 @@
       </div>
 
     </div>
-  </footer>
+  </footer> 
 
 </div>
 

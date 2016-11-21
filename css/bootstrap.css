@@ -286,6 +286,15 @@ th {
     display: none;
   }
 
+  .box {
+      max-width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+  }
+
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
@@ -3055,7 +3064,7 @@ tbody.collapse.in {
   font-size: 12px;
   line-height: 1.42857;
   color: #777777;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .dropdown-backdrop {
