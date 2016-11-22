@@ -17,114 +17,23 @@
 </aside>
 
 <div id="fh5co-work-section" class="fh5co-light-grey-section">
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <a href="http://www.uprm.edu/ciym/Faculty/yli.html" class="item-grid text-center">
-        <div class="image" style="background-image: url(images/yangli.jpg)"></div>
-        <div class="v-align">
-          <div class="v-align-middle">
-            <h3 class="title">Yang Li, Ph.D.</h3>
-            <h5 class="category">Associate Professor</h5>
-          </div>
-        </div>
-      </a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+        <h2 style="margin-bottom: 20px;
+        font-weight: 700;">Our Team</h2>
+        <p>Click on one of them to see more information.</p>
+      </div>
     </div>
-    <div class="col-md-4">
-      <a href="http://academic.uprm.edu/~jlu/ " class="item-grid text-center">
-        <div class="image" style="background-image: url(images/jlu.jpg)"></div>
+
+<div *ngFor="let teamRow of teamRows" class="row">
+  <div *ngFor="let team of teamRow.myTeam" class="col-md-4">
+      <a data-toggle="modal" [attr.data-target]="'#'+team.id+'TeamModal'" class="item-grid text-center">
+        <img class="image" src="images/{{team.imageUrl}}.jpg">
         <div class="v-align">
           <div class="v-align-middle">
-            <h3 class="title">Jun-Qiang Lu, Ph.D.</h3>
-            <h5 class="category">Associate Professor</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="http://ece.uprm.edu/~lukejie/" class="item-grid text-center">
-        <div class="image" style="background-image: url(images/kejie.jpg)"></div>
-        <div class="v-align">
-          <div class="v-align-middle">
-            <h3 class="title">Kejie Lu, Ph.D.</h3>
-            <h5 class="category">Associate Professor</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="#" class="item-grid text-center">
-        <div class="image" style="background-image: url(images/manuel.jpg)"></div>
-        <div class="v-align">
-          <div class="v-align-middle">
-            <h3 class="title">Manuel A. Baez Gonzalez</h3>
-            <h5 class="category">Computer Engineering Student, Third Year</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="#" class="item-grid text-center">
-        <div class="image" style="background-image: url(images/angel.jpg)"></div>
-        <div class="v-align">
-          <div class="v-align-middle">
-            <h3 class="title">Angel D. Colon Rios</h3>
-            <h5 class="category">Electrical Engineering Student, Third Year</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="#" class="item-grid text-center">
-        <div class="image" style="background-image: url(images/ernesto.jpg)"></div>
-        <div class="v-align">
-          <div class="v-align-middle">
-            <h3 class="title">Ernesto J. Arroyo Aviles</h3>
-            <h5 class="category">Electrical Engineering Student, Fourth Year</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="#" class="item-grid text-center">
-        <div class="image" style="background-image: url(images/kevin.jpg)"></div>
-        <div class="v-align">
-          <div class="v-align-middle">
-            <h3 class="title">Kevin Orta</h3>
-            <h5 class="category">Electrical Engineering Student, Third Year</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="#" class="item-grid text-center">
-        <div class="image" style="background-image: url(images/shayny.jpg)"></div>
-        <div class="v-align">
-          <div class="v-align-middle">
-            <h3 class="title">Shayny Ortiz</h3>
-            <h5 class="category">Student</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="#" class="item-grid text-center">
-        <div class="image" style="background-image: url(images/adrian.jpeg)"></div>
-        <div class="v-align">
-          <div class="v-align-middle">
-            <h3 class="title">Adrian Soto</h3>
-            <h5 class="category">Computer Engineering Student, Third Year</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="#" class="item-grid text-center">
-        <div class="image" style="background-image: url(images/daniel.jpg)"></div>
-        <div class="v-align">
-          <div class="v-align-middle">
-            <h3 class="title">Daniel J. Vicens</h3>
-            <h5 class="category">Electrical Engineering Student, Third Year</h5>
+            <h3 class="title">{{team.Name}}</h3>
+            <h5 class="category">{{team.info}}</h5>
           </div>
         </div>
       </a>

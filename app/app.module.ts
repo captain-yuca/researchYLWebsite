@@ -11,6 +11,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TeachingComponent } from './teaching/teaching.component';
 import { HomeComponent} from './home/home.component';
 import {KSSwiperModule} from 'angular2-swiper';
+import { TeamService } from './shared/team.services';
 
 @NgModule({
     imports: [
@@ -31,7 +32,8 @@ import {KSSwiperModule} from 'angular2-swiper';
 
     ],
     providers: [
-        ResearchService
+        ResearchService,
+        TeamService
     ],
     bootstrap: [AppComponent]
 })
