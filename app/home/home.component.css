@@ -1,4 +1,4 @@
-.swiper-container {
+/*.swiper-container {
     width: 100%;
     height: 100%;
 }
@@ -84,6 +84,9 @@
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead .icon-heart {
   color: #d9534f;
-}
+}*/
 .swiper-button-blue{
+
+  top:25%;
+  padding: 50px;
 }

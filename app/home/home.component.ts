@@ -8,7 +8,7 @@ import {KSSwiperContainer, KSSwiperSlide} from 'angular2-swiper';
 @Component({
     selector: 'home',
     templateUrl: 'app/home/home.component.html',
-    styleUrls: ['app/shared/swiper.css', 'css/style.css', 'app/home/home-transition.css'],
+    styleUrls: ['app/shared/swiper.css', 'css/style.css', 'app/home/home.component.css'],
     host: {'class' : 'ng-animate homeContainer'}
 })
 export class HomeComponent implements AfterViewInit{
@@ -20,10 +20,11 @@ export class HomeComponent implements AfterViewInit{
     constructor() {
       this.example1SwipeOptions = {
         slidesPerView: 1,
-        loop: false,
+        loop: true,
         spaceBetween: 0,
         pagination: '.swiper-pagination',
-        paginationClickable: true
+        paginationClickable: true,
+        autoplay: 3000
       };
     }
 

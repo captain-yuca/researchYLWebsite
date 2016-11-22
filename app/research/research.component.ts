@@ -34,7 +34,6 @@ constructor(
       slidesPerView: 1,
       loop: false,
       spaceBetween: 0,
-      pagination: '.swiper-pagination',
       paginationClickable: true,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev'
@@ -84,5 +83,7 @@ constructor(
   }
   onSelect(research: Research): void {
     this.selectedResearch = research;
+    this.router.navigate(['/detail', this.selectedResearch.id]);
+
   }
 }

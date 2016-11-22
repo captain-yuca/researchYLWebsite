@@ -17,8 +17,8 @@ var ResearchService = (function () {
         return Promise.resolve(research_items_1.RESEARCH);
     };
     ResearchService.prototype.getResearch = function (id) {
-        return this.getResearchItems()
-            .then(function (researchItems) { return researchItems.find(function (research) { return research.id === id; }); });
+        return (this.getResearchItems()
+            .then(function (researchItems) { return researchItems.find(function (research) { return research.id === id; }); }));
     };
     ResearchService = __decorate([
         core_1.Injectable(), 

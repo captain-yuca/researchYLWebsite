@@ -20,8 +20,8 @@
 
   <ks-swiper-slide >
 
-      <div class="swiper-slide" style="background: url(images/nsflogo2.jpg) no-repeat center center; background-size:1700px; vertical-align: middle;">
-
+      <div class="swiper-slide" style="background: url(images/nsflogo2.jpg) no-repeat center center; background-size:contain; vertical-align: middle;">
+        <h1 class="text-center" style="position:relative; top:75%; font-size:27pt; font-weight:700;">Thank you for your support!</h1>
       </div>
     </ks-swiper-slide>
 
@@ -35,13 +35,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-        <h2><a href="research.html">Our Awesome Research</a></h2>
+        <h2><a [routerLink]="['research']">Our Awesome Research</a></h2>
         <p>"As engineers, we were going to be in a position to change the world - not just study it". By: Henry Petroski</p>
-        <p><a routerLink="/research" class="btn btn-primary with-arrow ">Our Research<i class="icon-arrow-right"></i></a></p>
+        <p><a routerLink="/research" class="btn btn-primary with-arrow ">Go to Our Research<i class="icon-arrow-right"></i></a></p>
         <br><br><br>
         <h2><a href="https://www.nsf.gov/">Special Thanks</a></h2>
         <p>We want to give a special thanks to the National Science Foundation for supporting our research! </p><p> <img src="images/nsflogo.png" style="width:50%" ></p>
-        <p><a href="https://www.nsf.gov/" class="btn btn-primary with-arrow ">NSF<i class="icon-arrow-right"></i></a></p>
+        <p><a href="https://www.nsf.gov/" class="btn btn-primary with-arrow ">Go to NSF<i class="icon-arrow-right"></i></a></p>
 
       </div>
     </div>

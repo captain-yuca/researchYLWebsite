@@ -1,7 +1,9 @@
 .box {
-    width: 10%;
+    width: 400px;
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
+    overflow: hidden;
+
     text-overflow: ellipsis;
 }
