@@ -1,2 +1,8 @@
-
-<h2>{{researchName}}</h2>
+<div *ngIf="research">
+  <h2>{{research.researchName}} details!</h2>
+  <div><label>id: </label>{{research.id}}</div>
+  <div>
+    <label>name: </label>
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>

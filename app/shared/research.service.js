@@ -9,12 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var research_items_1 = require('./data/research-items');
+var http_1 = require('@angular/http');
+require('rxjs/add/operator/toPromise');
+require('rxjs/add/operator/catch');
 var ResearchService = (function () {
-    function ResearchService() {
+    function ResearchService(http) {
+        this.http = http;
+        this.researchUrl = 'http://localhost:3008/research'; // URL to web api
     }
     ResearchService.prototype.getResearchItems = function () {
-        return Promise.resolve(research_items_1.RESEARCH);
+        return this.http.get(this.researchUrl)
+            .toPromise()
+            .then(function (response) { return response.json(); });
     };
     ResearchService.prototype.getResearch = function (id) {
         return this.getResearchItems()
@@ -22,7 +28,7 @@ var ResearchService = (function () {
     };
     ResearchService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [http_1.Http])
     ], ResearchService);
     return ResearchService;
 }());

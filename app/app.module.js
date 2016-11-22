@@ -21,6 +21,7 @@ var contact_us_component_1 = require('./contact-us/contact-us.component');
 var teaching_component_1 = require('./teaching/teaching.component');
 var home_component_1 = require('./home/home.component');
 var angular2_swiper_1 = require('angular2-swiper');
+var http_1 = require('@angular/http');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -30,7 +31,9 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 app_routing_1.routing,
-                angular2_swiper_1.KSSwiperModule
+                angular2_swiper_1.KSSwiperModule,
+                http_1.HttpModule,
+                http_1.JsonpModule
             ],
             declarations: [
                 app_component_1.AppComponent,

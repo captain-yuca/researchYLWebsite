@@ -11,13 +11,17 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TeachingComponent } from './teaching/teaching.component';
 import { HomeComponent} from './home/home.component';
 import {KSSwiperModule} from 'angular2-swiper';
+import { HttpModule, JsonpModule } from '@angular/http';
+
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
         routing,
-        KSSwiperModule
+        KSSwiperModule,
+        HttpModule,
+        JsonpModule
     ],
     declarations: [
         AppComponent,
