@@ -3,4 +3,5 @@ export class Research {
   researchName: string;
   description: string;
   imageUrl: string;
+  website?: string;
 }

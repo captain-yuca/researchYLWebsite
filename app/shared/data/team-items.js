@@ -11,7 +11,7 @@ exports.TEAM = [
         id: 2,
         Name: 'Jun-Qiang Lu, Ph.D.',
         info: 'Associate Professor',
-        description: 'No, be like the other team.',
+        description: 'Physics',
         imageUrl: 'jlu'
     },
     {

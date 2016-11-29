@@ -41,6 +41,5 @@ export class AppComponent {
 
   onSelectTeam(team: Team): void {
     this.selectedTeam = team;
-    this.router.navigate(['/detail', this.selectedTeam.id]);
   }
 }

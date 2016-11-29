@@ -97,14 +97,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <a type="button" role="button" class="btn btn-primary with-arrow" (click)="onSelectResearch(research)" data-dismiss="modal">More Information<i class="icon-arrow-right"></i></a>
-                        <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+                <div class="modal-footer">
+
+                  <a *ngIf="!research.website"type="button" role="button" class="btn btn-primary with-arrow" (click)="onSelectResearch(research)" data-dismiss="modal">More Information<i class="icon-arrow-right"></i></a>
+                  <a *ngIf="research.website"type="button" role="button" class="btn btn-primary with-arrow" href='{{research.website}}' >More Information<i class="icon-arrow-right"></i></a>
+
+                  <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
+  </div>
+</div>
 
     <div *ngFor="let team of teamItems">
         <div class="modal fade" [attr.id]="team.id + 'TeamModal'" tabindex="-1" role="dialog" [attr.aria-labelledby]="team.id +'ModalTeamLabel'">

@@ -9,11 +9,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 // Keep the Input import for now, we'll remove it later:
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var common_1 = require("@angular/common");
-require("rxjs/add/operator/switchMap");
-var research_service_1 = require("../shared/research.service");
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var common_1 = require('@angular/common');
+require('rxjs/add/operator/switchMap');
+var research_service_1 = require('../shared/research.service');
 var ResearchDetailComponent = (function () {
     function ResearchDetailComponent(researchService, route, location) {
         this.researchService = researchService;
@@ -29,17 +29,15 @@ var ResearchDetailComponent = (function () {
             console.log(research);
         });
     };
+    ResearchDetailComponent = __decorate([
+        core_1.Component({
+            selector: 'research-details',
+            templateUrl: 'app/research/research-detail.component.html',
+            styleUrls: ['css/style.css']
+        }), 
+        __metadata('design:paramtypes', [research_service_1.ResearchService, router_1.ActivatedRoute, common_1.Location])
+    ], ResearchDetailComponent);
     return ResearchDetailComponent;
 }());
-ResearchDetailComponent = __decorate([
-    core_1.Component({
-        selector: 'research-details',
-        templateUrl: 'app/research/research-detail.component.html',
-        styleUrls: ['css/style.css']
-    }),
-    __metadata("design:paramtypes", [research_service_1.ResearchService,
-        router_1.ActivatedRoute,
-        common_1.Location])
-], ResearchDetailComponent);
 exports.ResearchDetailComponent = ResearchDetailComponent;
 //# sourceMappingURL=research-detail.component.js.map

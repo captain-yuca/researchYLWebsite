@@ -5,6 +5,7 @@ import { Location }                 from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 
 
+
 import { ResearchService } from '../shared/research.service';
 import { Research } from '../shared/research';
 
@@ -28,7 +29,4 @@ export class ResearchDetailComponent implements OnInit {
             console.log(research);
         });
     }
-
-
-
 }
