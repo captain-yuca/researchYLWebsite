@@ -7,7 +7,7 @@ export class ResearchService {
     return Promise.resolve(RESEARCH);
   }
   getResearch(id: number): Promise<Research> {
-      return this.getResearchItems()
-          .then(researchItems => researchItems.find(research => research.id === id));
+      return (this.getResearchItems()
+          .then(researchItems => researchItems.find(research => research.id === id)));
   }
 }

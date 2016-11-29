@@ -12,8 +12,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var common_1 = require('@angular/common');
+require('rxjs/add/operator/switchMap');
 var research_service_1 = require('../shared/research.service');
-var research_1 = require('../shared/research');
 var ResearchDetailComponent = (function () {
     function ResearchDetailComponent(researchService, route, location) {
         this.researchService = researchService;
@@ -22,19 +22,13 @@ var ResearchDetailComponent = (function () {
     }
     ResearchDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.route.params.forEach(function (params) {
-            var id = +params['id'];
-            _this.researchService.getResearch(id)
-                .then(function (research) { return _this.research = research; });
+        this.route.params
+            .switchMap(function (params) { return _this.researchService.getResearch(+params['id']); })
+            .subscribe(function (research) {
+            _this.research = research;
+            console.log(research);
         });
     };
-    ResearchDetailComponent.prototype.goBack = function () {
-        this.location.back();
-    };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', research_1.Research)
-    ], ResearchDetailComponent.prototype, "research", void 0);
     ResearchDetailComponent = __decorate([
         core_1.Component({
             selector: 'research-details',

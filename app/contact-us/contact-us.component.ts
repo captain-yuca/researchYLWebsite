@@ -19,11 +19,7 @@ export class ContactUsComponent{
     this.example1SwipeOptions = {
       slidesPerView: 1,
       loop: false,
-      spaceBetween: 0,
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev'
+      spaceBetween: 0
     };
   }
 
