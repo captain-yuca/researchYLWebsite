@@ -24,10 +24,10 @@ var ResearchDetailComponent = (function () {
         var _this = this;
         this.route.params
             .switchMap(function (params) { return _this.researchService.getResearch(+params['id']); })
-            .subscribe(function (research) { return _this.research = research; });
-    };
-    ResearchDetailComponent.prototype.goBack = function () {
-        this.location.back();
+            .subscribe(function (research) {
+            _this.research = research;
+            console.log(research);
+        });
     };
     ResearchDetailComponent = __decorate([
         core_1.Component({

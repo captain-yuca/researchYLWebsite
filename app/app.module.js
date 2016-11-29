@@ -21,6 +21,7 @@ var contact_us_component_1 = require('./contact-us/contact-us.component');
 var teaching_component_1 = require('./teaching/teaching.component');
 var home_component_1 = require('./home/home.component');
 var angular2_swiper_1 = require('angular2-swiper');
+var team_services_1 = require('./shared/team.services');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -42,7 +43,8 @@ var AppModule = (function () {
                 home_component_1.HomeComponent
             ],
             providers: [
-                research_service_1.ResearchService
+                research_service_1.ResearchService,
+                team_services_1.TeamService
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

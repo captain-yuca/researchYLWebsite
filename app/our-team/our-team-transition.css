@@ -1,9 +1,9 @@
-.research {
+.team {
         /*height: 50vh;*/
         /*background: #5cd65c;*/
     }
 
-    :host(.researchContainer) {
+    :host(.teamContainer) {
         /*display: inline-block;*/
         /*position: fixed;*/
         width: 100%;
@@ -11,16 +11,10 @@
         transition: all ease-in 0.5s;
     }
 
-    :host(.researchContainer.ng-enter) {
+    :host(.teamContainer.ng-enter) {
         transform: rotateZ(180deg)
     }
 
-    :host(.research.ng-enter-active) {
+    :host(.team.ng-enter-active) {
         transform: rotateZ(0deg)
     }
-
-.white {
-
-      color: white
-
-}

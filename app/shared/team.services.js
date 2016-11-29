@@ -9,22 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var research_items_1 = require('./data/research-items');
-var ResearchService = (function () {
-    function ResearchService() {
+var team_items_1 = require('./data/team-items');
+var TeamService = (function () {
+    function TeamService() {
     }
-    ResearchService.prototype.getResearchItems = function () {
-        return Promise.resolve(research_items_1.RESEARCH);
+    TeamService.prototype.getTeamItems = function () {
+        return Promise.resolve(team_items_1.TEAM);
     };
-    ResearchService.prototype.getResearch = function (id) {
-        return (this.getResearchItems()
-            .then(function (researchItems) { return researchItems.find(function (research) { return research.id === id; }); }));
+    TeamService.prototype.getTeam = function (id) {
+        return this.getTeamItems()
+            .then(function (teamItems) { return teamItems.find(function (team) { return team.id === id; }); });
     };
-    ResearchService = __decorate([
+    TeamService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], ResearchService);
-    return ResearchService;
+    ], TeamService);
+    return TeamService;
 }());
-exports.ResearchService = ResearchService;
-//# sourceMappingURL=research.service.js.map
+exports.TeamService = TeamService;
+//# sourceMappingURL=team.services.js.map

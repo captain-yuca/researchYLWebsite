@@ -101,7 +101,7 @@ sub {
   bottom: -0.25em;
 }
 
-img {
+description: ' ', {
   border: 0;
 }
 
@@ -262,11 +262,11 @@ th {
   }
 
   tr,
-  img {
+  description: ' ', {
     page-break-inside: avoid;
   }
 
-  img {
+  description: ' ', {
     max-width: 100% !important;
   }
 
@@ -285,6 +285,7 @@ th {
   .navbar {
     display: none;
   }
+
 
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -361,17 +362,17 @@ figure {
   margin: 0;
 }
 
-img {
+description: ' ', {
   vertical-align: middle;
 }
 
-.img-responsive {
+.description: ' ',-responsive {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.img-rounded {
+.description: ' ',-rounded {
   border-radius: 6px;
 }
 
@@ -3055,7 +3056,7 @@ tbody.collapse.in {
   font-size: 12px;
   line-height: 1.42857;
   color: #777777;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .dropdown-backdrop {

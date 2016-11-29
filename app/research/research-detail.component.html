@@ -1,3 +1,18 @@
-<div *ngIf="research">
-  <h2>{{research.researchName}}</h2>
+<br>
+<div class="container" *ngIf="research">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>{{research.researchName}}       <a *ngIf="research.website" type="button" role="button" class="btn btn-primary with-arrow" style="text-align:right" href='{{research.website}}' >More Information<i class="icon-arrow-right"></i></a>
+</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="images/{{research.imageUrl}}.jpg" alt="..." class="img img-thumbnail">
+      <br><br>
+    </div>
+    <div class="col-sm-8">
+      <p>{{research.description}}</p>
+    </div>
+  </div>
 </div>
