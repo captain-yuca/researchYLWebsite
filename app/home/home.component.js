@@ -16,12 +16,11 @@ var HomeComponent = (function () {
     function HomeComponent() {
         this.example1SwipeOptions = {
             slidesPerView: 1,
-            loop: false,
+            loop: true,
             spaceBetween: 0,
             pagination: '.swiper-pagination',
             paginationClickable: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev'
+            autoplay: 3000
         };
     }
     HomeComponent.prototype.moveNext = function () {
@@ -41,7 +40,7 @@ var HomeComponent = (function () {
         core_1.Component({
             selector: 'home',
             templateUrl: 'app/home/home.component.html',
-            styleUrls: ['app/shared/swiper.css', 'css/style.css', 'app/home/home-transition.css'],
+            styleUrls: ['app/shared/swiper.css', 'css/style.css', 'app/home/home.component.css'],
             host: { 'class': 'ng-animate homeContainer' }
         }), 
         __metadata('design:paramtypes', [])

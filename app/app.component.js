@@ -36,7 +36,6 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.onSelectTeam = function (team) {
         this.selectedTeam = team;
-        this.router.navigate(['/detail', this.selectedTeam.id]);
     };
     AppComponent = __decorate([
         core_1.Component({

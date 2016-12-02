@@ -23,7 +23,6 @@ var ResearchComponent = (function () {
             slidesPerView: 1,
             loop: false,
             spaceBetween: 0,
-            pagination: '.swiper-pagination',
             paginationClickable: true,
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev'
@@ -69,6 +68,7 @@ var ResearchComponent = (function () {
     };
     ResearchComponent.prototype.onSelect = function (research) {
         this.selectedResearch = research;
+        this.router.navigate(['/detail', this.selectedResearch.id]);
     };
     __decorate([
         core_2.ViewChild(angular2_swiper_1.KSSwiperContainer), 

@@ -1,129 +1,135 @@
 <!--/header-->
 <div id="fh5co-page">
-<header id="fh5co-header" role="banner">
-  <div class="container">
-    <div class="header-inner">
-      <h1><a href="index.html">Laboratory of Materials Synthesis and Characterization</a></h1>
-      <nav role="navigation">
-        <ul>
+    <header id="fh5co-header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <h1><a href="index.html">Laboratory of Materials Synthesis and Characterization</a></h1>
+                <nav role="navigation">
+                    <ul>
 
-          <li routerLinkActive="active"><a routerLink="/index">Home</a></li>
-          <li routerLinkActive="active"><a routerLink="/our-team">Our Team</a></li>
-          <!-- <li><a href="services.html">Services</a></li> -->
-          <!-- <li><a href="pricing.html">Pricing</a></li> -->
-          <li class="dropdown">
-            <a routerLink="/research" routerLinkActive="active" routerLinkActive="active">Research </a><a id="menu1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-              <div *ngFor="let research of researchItems">
-                <li> <a class="box" (click)="onSelect(research)">{{research.researchName}}</a></li>
-              </div>
-            </ul>
-          </li>
-          <li routerLinkActive="active"><a routerLink="/teaching">Teaching</a></li>
-          <li routerLinkActive="active"><a routerLink="/contact-us">Contact Us</a></li>
-        </ul>
-      </nav>
+                        <li routerLinkActive="active"><a routerLink="/index">Home</a></li>
+                        <li routerLinkActive="active"><a routerLink="/our-team">Our Team</a></li>
+                        <!-- <li><a href="services.html">Services</a></li> -->
+                        <!-- <li><a href="pricing.html">Pricing</a></li> -->
+                        <li class="dropdown">
+                            <a routerLink="/research" routerLinkActive="active" routerLinkActive="active">Research </a><a id="menu1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                    <li *ngFor="let research of researchItems"> <a class="box" (click)="onSelectResearch(research)">{{research.researchName}}</a></li>
+                            </ul>
+                        </li>
+                        <li routerLinkActive="active"><a routerLink="/teaching">Teaching</a></li>
+                        <li routerLinkActive="active"><a routerLink="/contact-us">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <router-outlet></router-outlet>
+    <footer id="fh5co-footer" role="contentinfo">
+
+        <div class="container">
+            <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+                <h3>About Us</h3>
+                <p>Group of students working with professors to expand their knowledge. </p>
+                <p><a [routerLink]="['contact-us']" class="btn btn-primary btn-outline with-arrow btn-sm">Support Us <i class="icon-arrow-right"></i></a></p>
+            </div>
+            <div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+                <h3>Useful Links</h3>
+                <ul class="float">
+                    <li><a [routerLink]="['teaching']">Education</a></li>
+                    <li><a [routerLink]="['teaching']">Material Science</a></li>
+                    <li><a [routerLink]="['research']">Research</a></li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+                <ul class="float">
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+                <h3>Follow Us</h3>
+                <ul class="fh5co-social">
+                    <li><a href="https://twitter.com/UPRMMatResearch"><i class="icon-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/Laboratory-of-Materials-Synthesis-and-Characterization-1204694652921885/"><i class="icon-facebook"></i></a></li>
+
+                    <li><a href="https://www.instagram.com/laboratory.of.materials/"><i class="icon-instagram"></i></a></li>
+                </ul>
+            </div>
+          </div>
+    </footer>
+  </div>
+
+
+
+
+    <!-- Modals -->
+
+
+    <div *ngFor="let research of researchItems">
+        <div class="modal fade" [attr.id]="research.id + 'Modal'" tabindex="-1" role="dialog" [attr.aria-labelledby]="research.id +'ModalLabel'">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="modal-title" [attr.id]="research.id + 'ModalLabel'">{{research.researchName}}</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Description</h4>
+                                <img src="images/{{research.imageUrl}}.jpg" alt="..." class="img-thumbnail">
+                                <br><br>
+                                <p>{{research.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="modal-footer">
+
+                  <a *ngIf="!research.website"type="button" role="button" class="btn btn-primary with-arrow" (click)="onSelectResearch(research)" data-dismiss="modal">More Information<i class="icon-arrow-right"></i></a>
+                  <a *ngIf="research.website"type="button" role="button" class="btn btn-primary with-arrow" href='{{research.website}}' >More Information<i class="icon-arrow-right"></i></a>
+
+                  <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
   </div>
-</header>
-  <router-outlet></router-outlet>
-  <footer id="fh5co-footer" role="contentinfo">
-
-    <div class="container">
-      <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-        <h3>About Us</h3>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-        <p><a href="contact.html" class="btn btn-primary btn-outline with-arrow btn-sm">Join Us <i class="icon-arrow-right"></i></a></p>
-      </div>
-      <div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-        <h3>Our Services</h3>
-        <ul class="float">
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Branding &amp; Identity</a></li>
-          <li><a href="#">Free HTML5</a></li>
-          <li><a href="#">HandCrafted Templates</a></li>
-        </ul>
-        <ul class="float">
-          <li><a href="#">Free Bootstrap Template</a></li>
-          <li><a href="#">Free HTML5 Template</a></li>
-          <li><a href="#">Free HTML5 &amp; CSS3 Template</a></li>
-          <li><a href="#">HandCrafted Templates</a></li>
-        </ul>
-
-      </div>
-
-      <div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-        <h3>Follow Us</h3>
-        <ul class="fh5co-social">
-          <li><a href="#"><i class="icon-twitter"></i></a></li>
-          <li><a href="#"><i class="icon-facebook"></i></a></li>
-          <li><a href="#"><i class="icon-google-plus"></i></a></li>
-          <li><a href="#"><i class="icon-instagram"></i></a></li>
-        </ul>
-      </div>
-
-
-
-      <div class="col-md-12 fh5co-copyright text-center">
-        <p>&copy; 2016 Free HTML5 template. All Rights Reserved. <span>Designed with <i class="icon-heart"></i> by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images by <a href="http://unsplash.com/" target="_blank">Unsplash</a></span></p>
-      </div>
-
-    </div>
-  </footer>
-
 </div>
 
-<!-- Modals -->
-
-
-  <div *ngFor="let research of researchItems">
-    <div class="modal fade" [attr.id]="research.id + 'Modal'" tabindex="-1" role="dialog" [attr.aria-labelledby]="research.id +'ModalLabel'">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h2 class="modal-title" [attr.id]="research.id + 'ModalLabel'">{{research.researchName}}</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h4>Description</h4>
-                        <img src="images/{{research.imageUrl}}.jpg" alt="..." class="img-thumbnail">
-                        <br><br>
-                        <p>{{research.description}}</p>
-                      </div>
+    <div *ngFor="let team of teamItems">
+        <div class="modal fade" [attr.id]="team.id + 'TeamModal'" tabindex="-1" role="dialog" [attr.aria-labelledby]="team.id +'ModalTeamLabel'">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="modal-title" [attr.id]="team.id + 'ModalTeamLabel'">{{team.Name}}</h2>
                     </div>
-                </div>
-                <div class="modal-footer">
-                  <a type="button" role="button" class="btn btn-primary with-arrow" (click)="onSelectResearch(research)" data-dismiss="modal">More Information<i class="icon-arrow-right"></i></a>
-                  <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="images/{{team.imageUrl}}.jpg" alt="..." class="img-rounded" height="150" width="150">
+                                <br><br>
+                                <p>{{team.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div *ngFor="let team of teamItems">
-  <div class="modal fade" [attr.id]="team.id + 'TeamModal'" tabindex="-1" role="dialog" [attr.aria-labelledby]="team.id +'ModalTeamLabel'">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h2 class="modal-title" [attr.id]="team.id + 'ModalTeamLabel'">{{team.Name}}</h2>
-              </div>
-              <div class="modal-body">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <img src="images/{{team.imageUrl}}.jpg" alt="..." class="img-rounded" height="150" width="150">
-                      <br><br>
-                      <p>{{team.description}}</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
