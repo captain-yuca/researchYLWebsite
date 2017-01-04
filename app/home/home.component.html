@@ -1,27 +1,20 @@
-<aside id="fh5co-hero" class="js-fullheight"><p></p>
-  <div class="swiper-button-next swiper-button-blue" (click)="moveNext()"></div>
-  <div class="swiper-button-prev swiper-button-blue" (click)="movePrev()"></div>
+<p></p>
+<div class="swiper-button-next swiper-button-blue" (click)="moveNext()" style="top:45vh;"></div>
+<div class="swiper-button-prev swiper-button-blue" (click)="movePrev()" style="top:45vh;"></div>
+<aside style="height:63%; margin: 0 auto;">
   <ks-swiper-container [options]="example1SwipeOptions">
 
+  <ks-swiper-slide>
 
-  <ks-swiper-slide >
-
-    <div class="swiper-slide" style="background: url(images/group.jpg) no-repeat center center; background-size: cover; vertical-align: middle;">
-      <p class="text-center" style="position:relative; top:50%;"><a href="http://www.uprm.edu" class="btn btn-primary with-arrow ">UPRM <i class="icon-arrow-right"></i></a></p>
-      </div>
-    </ks-swiper-slide>
-
-  <ks-swiper-slide >
-
-    <div class="swiper-slide" style="background: url(images/group1.jpg) no-repeat center center; background-size: cover; vertical-align: middle;">
+    <div class="swiper-slide" style="background: url(images/group1.jpg) no-repeat center center; background-size: cover; vertical-align: middle; object-fit: contain; height:100%;">
       <p class="text-center" style="position:relative; top:50%;"><a href="http://www.uprm.edu" class="btn btn-primary with-arrow ">UPRM <i class="icon-arrow-right"></i></a></p>
     </div>
   </ks-swiper-slide>
 
   <ks-swiper-slide >
 
-      <div class="swiper-slide" style="background: url(images/nsflogo2.jpg) no-repeat center center; background-size:contain; vertical-align: middle;">
-        <h1 class="text-center" style="position:relative; top:75%; font-size:27pt; font-weight:700;">Thank you for your support!</h1>
+      <div class="swiper-slide" style="background: url(images/thanks.jpg) no-repeat center center; background-size:contain; vertical-align: middle;">
+        <h1 class="text-center" style="position:relative; top:80%; font-size:27pt; font-weight:700;">Thank you for your support!</h1>
       </div>
     </ks-swiper-slide>
 
@@ -29,7 +22,6 @@
 </ks-swiper-container>
 
 </aside>
-
 
 <div id="fh5co-services-section">
   <div class="container">
@@ -40,7 +32,7 @@
         <p><a routerLink="/research" class="btn btn-primary with-arrow ">Go to Our Research<i class="icon-arrow-right"></i></a></p>
         <br><br><br>
         <h2><a href="https://www.nsf.gov/">Special Thanks</a></h2>
-        <p>We want to give a special thanks to the National Science Foundation for supporting our research! </p><p> <img src="images/nsflogo.png" style="width:50%" ></p>
+        <p>We want to give a special thanks to the National Science Foundation for supporting our research! </p><p> <img class="fixed-ratio-resize" src="images/nsflogo.png" style="width:40%" ></p>
         <p><a href="https://www.nsf.gov/" class="btn btn-primary with-arrow ">Go to NSF<i class="icon-arrow-right"></i></a></p>
 
       </div>
