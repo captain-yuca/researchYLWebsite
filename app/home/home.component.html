@@ -23,19 +23,55 @@
 
 </aside>
 
-<div id="fh5co-services-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-        <h2><a [routerLink]="['research']">Our Awesome Research</a></h2>
-        <p>"As engineers, we were going to be in a position to change the world - not just study it". By: Henry Petroski</p>
-        <p><a routerLink="/research" class="btn btn-primary with-arrow ">Go to Our Research<i class="icon-arrow-right"></i></a></p>
-        <br><br><br>
-        <h2><a href="https://www.nsf.gov/">Special Thanks</a></h2>
-        <p>We want to give a special thanks to the National Science Foundation for supporting our research! </p><p> <img class="fixed-ratio-resize" src="images/nsflogo.png" style="width:40%" ></p>
-        <p><a href="https://www.nsf.gov/" class="btn btn-primary with-arrow ">Go to NSF<i class="icon-arrow-right"></i></a></p>
+<div style="padding-top:75px; padding-bottom:5px">
+
+    <div class="RowK1">
+        <div class="ColumnK1">
+          <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+            <h2><a [routerLink]="['research']">Our Awesome Research</a></h2>
+            <p>"As engineers, we were going to be in a position to change the world - not just study it". By: Henry Petroski</p>
+            <p><a routerLink="/research" class="btn btn-primary with-arrow ">Go to Our Research<i class="icon-arrow-right"></i></a></p>
+
+          </div>
+        </div>
+        <div class="ColumnK1">
+          <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+            <h2><a href="https://www.nsf.gov/">Special Thanks</a></h2>
+            <p>We want to give a special thanks to the National Science Foundation for supporting our research! </p><p> <img class="fixed-ratio-resize" src="images/nsflogo.png" style="width:40%" ></p>
+            <p><a href="https://www.nsf.gov/" class="btn btn-primary with-arrow ">Go to NSF<i class="icon-arrow-right"></i></a></p>
+          </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="RowK">
+
+    <div class="ColumnK" routerLink="/research">
+
+      <div class="CursorHover" style="background: url(images/bilayer-g.jpg) no-repeat center center; background-size: cover; vertical-align: middle; object-fit: contain; height:100%;">
+
+        <div class="ColumnContent">
+          Our Research ...
+        </div>
 
       </div>
+
     </div>
+
+    <div class="ColumnK" routerLink="/our-team">
+      <div class="CursorHover" style="background: url(images/group.jpg) no-repeat center center; background-size: cover; vertical-align: middle; object-fit: contain; height:100%;">
+        <div class="ColumnContent">
+          Lab Members ...
+        </div>
+    </div>
+  </div>
+
+  <div class="ColumnK" routerLink="/teaching">
+    <div class="CursorHover" style="background: url(images/materials.jpg) no-repeat center center; background-size: cover; vertical-align: middle; object-fit: contain; height:100%;">
+      <div class="ColumnContent">
+        Our Courses ...
+      </div>
   </div>
 </div>

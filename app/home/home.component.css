@@ -95,3 +95,73 @@
 	height: auto;
 	width: auto\9; /* IE8 */
 }
+
+.RowK1
+{
+    display: table;
+    height: 35%;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    /* border-spacing: 10px; Optional*/
+}
+
+
+.RowK
+{
+    display: table;
+    height: 40%;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 0px; /*Optional*/
+    padding-bottom: 25px;
+}
+
+.ColumnK1
+{
+    display: table-cell;
+    vertical-align:top;
+    /* background-color: red; Optional */
+}
+
+
+.ColumnK
+{
+    display: table-cell;
+    /* background-color: red; Optional */
+}
+
+.CursorHover {
+
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-color: black;
+
+}
+.CursorHover:hover {
+  transform: translate(0px, -10px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.ColumnContent {
+
+  position:relative;
+
+  font-size: 25px;
+  color: white;
+  text-shadow:
+    1px 1px 0 #000,
+  -1px -1px 0 #000,
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+  top:80%;
+  left:3%;
+
+}
+
+.ColumnContent:hover {
+
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+
+}
