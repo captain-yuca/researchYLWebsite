@@ -8,13 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var team_row_1 = require("../shared/team-row");
-var team_services_1 = require("../shared/team.services");
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var team_row_1 = require('../shared/team-row');
+var team_services_1 = require('../shared/team.services');
 //For Swiper Component
-var core_2 = require("@angular/core");
-var angular2_swiper_1 = require("angular2-swiper");
+var core_2 = require('@angular/core');
+var angular2_swiper_1 = require('angular2-swiper');
 var OurTeamComponent = (function () {
     function OurTeamComponent(router, teamService) {
         this.router = router;
@@ -50,7 +50,7 @@ var OurTeamComponent = (function () {
             for (var teamCounter = 0; teamCounter < _this.teamItems.length; teamCounter++) {
                 _this.teamRows[teamRowCounter].myTeam.push(_this.teamItems[teamCounter]);
                 myTeamCounter++;
-                if (moveTeamCounter % 4 == 0) {
+                if (moveTeamCounter % 6 == 0) {
                     teamRowCounter++;
                     _this.teamRows[teamRowCounter].myTeam = new Array();
                     myTeamCounter = 0;
@@ -68,21 +68,20 @@ var OurTeamComponent = (function () {
     OurTeamComponent.prototype.onSelect = function (team) {
         this.selectedTeam = team;
     };
+    __decorate([
+        core_2.ViewChild(angular2_swiper_1.KSSwiperContainer), 
+        __metadata('design:type', angular2_swiper_1.KSSwiperContainer)
+    ], OurTeamComponent.prototype, "swiperContainer", void 0);
+    OurTeamComponent = __decorate([
+        core_1.Component({
+            selector: 'our-team',
+            templateUrl: 'app/our-team/our-team.component.html',
+            styleUrls: ['app/shared/swiper.css', 'css/style.css', 'app/our-team/our-team-transition.css'],
+            host: { 'class': 'ng-animate teamContainer' }
+        }), 
+        __metadata('design:paramtypes', [router_1.Router, team_services_1.TeamService])
+    ], OurTeamComponent);
     return OurTeamComponent;
 }());
-__decorate([
-    core_2.ViewChild(angular2_swiper_1.KSSwiperContainer),
-    __metadata("design:type", angular2_swiper_1.KSSwiperContainer)
-], OurTeamComponent.prototype, "swiperContainer", void 0);
-OurTeamComponent = __decorate([
-    core_1.Component({
-        selector: 'our-team',
-        templateUrl: 'app/our-team/our-team.component.html',
-        styleUrls: ['app/shared/swiper.css', 'css/style.css', 'app/our-team/our-team-transition.css'],
-        host: { 'class': 'ng-animate teamContainer' }
-    }),
-    __metadata("design:paramtypes", [router_1.Router,
-        team_services_1.TeamService])
-], OurTeamComponent);
 exports.OurTeamComponent = OurTeamComponent;
 //# sourceMappingURL=our-team.component.js.map

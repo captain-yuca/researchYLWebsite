@@ -5,13 +5,15 @@ exports.RESEARCH = [
         researchName: 'Ultra Rapid Quenching Apparatus',
         description: 'Ultra Rapid Quenching Apparatus (URQA) is supported by NSF-MRI program. (NSF Award: DMR 1531755). The URQA consists of a crucible-free levitation melting and splat quenching system, which makes it well suited for melting reactive materials bearing high melting points. The synthesis of amorphous, microcrystalline and metastable phases are the result of high cooling rates of more than 106 K·s-1. A high-velocity two-piston system is driven by solenoids; when activated the fronting flat surface splat-quenched the falling liquid sample, forcing the exposed large surface area to cool and solidify at high cooling rates. Therefore, synchronizing dropping melt and pistons require strict control, which is achieved by means of a laser light barrier. Easily exchangeable copper pistons or other high conductivity metals are used. The compact high-vacuum chamber for operation is kept under ultra-clean operating conditions; alternative inert gas backfilling operating is available. The URQA strongly supports the non-equilibrium preparation of clathrates.',
         imageUrl: 'URQA',
-        website: 'http://www.uprm.edu/news/articles/as2011044.html'
+        website: 'http://www.uprm.edu/news/articles/as2011044.html',
+        machine: true
     },
     {
         id: 2,
         researchName: 'The free-cryogen physical property measurement system ',
         description: 'The free-cryogen physical property measurement system (PPMS) which is supported by NSF-MRI program (NSF Award: DMR 0821284). This system includes capabilities for measuring electrical conductivity, magnetoresistance, Hall effect, DC and AC susceptibility, and heat capacity. The cryogen-free cryocooler-based system allows measurements from 1.6 to 325 K. The 9 Tesla field will be a unique feature of this system. These are physical property measurements and materials characterizations which are relevant to most fields in physics, and materials science and engineering. This cryogen-free system will incur low operating costs in low temperature measurements.',
-        imageUrl: 'Cryogenic'
+        imageUrl: 'Cryogenic',
+        machine: true
     },
     {
         id: 3,
