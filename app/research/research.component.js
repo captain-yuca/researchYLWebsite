@@ -8,13 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var research_row_1 = require('../shared/research-row');
-var research_service_1 = require('../shared/research.service');
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var research_row_1 = require("../shared/research-row");
+var research_service_1 = require("../shared/research.service");
 //For Swiper Component
-var core_2 = require('@angular/core');
-var angular2_swiper_1 = require('angular2-swiper');
+var core_2 = require("@angular/core");
+var angular2_swiper_1 = require("angular2-swiper");
 var ResearchComponent = (function () {
     function ResearchComponent(router, researchService) {
         this.router = router;
@@ -70,20 +70,21 @@ var ResearchComponent = (function () {
         this.selectedResearch = research;
         this.router.navigate(['/detail', this.selectedResearch.id]);
     };
-    __decorate([
-        core_2.ViewChild(angular2_swiper_1.KSSwiperContainer), 
-        __metadata('design:type', angular2_swiper_1.KSSwiperContainer)
-    ], ResearchComponent.prototype, "swiperContainer", void 0);
-    ResearchComponent = __decorate([
-        core_1.Component({
-            selector: 'research',
-            templateUrl: 'app/research/research.component.html',
-            styleUrls: ['css/style.css', 'app/shared/swiper.css', 'app/research/research-transition.css'],
-            host: { 'class': 'ng-animate researchContainer' }
-        }), 
-        __metadata('design:paramtypes', [router_1.Router, research_service_1.ResearchService])
-    ], ResearchComponent);
     return ResearchComponent;
 }());
+__decorate([
+    core_2.ViewChild(angular2_swiper_1.KSSwiperContainer),
+    __metadata("design:type", angular2_swiper_1.KSSwiperContainer)
+], ResearchComponent.prototype, "swiperContainer", void 0);
+ResearchComponent = __decorate([
+    core_1.Component({
+        selector: 'research',
+        templateUrl: 'app/research/research.component.html',
+        styleUrls: ['css/style.css', 'app/shared/swiper.css', 'app/research/research-transition.css'],
+        host: { 'class': 'ng-animate researchContainer' }
+    }),
+    __metadata("design:paramtypes", [router_1.Router,
+        research_service_1.ResearchService])
+], ResearchComponent);
 exports.ResearchComponent = ResearchComponent;
 //# sourceMappingURL=research.component.js.map
