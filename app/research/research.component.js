@@ -48,7 +48,7 @@ var ResearchComponent = (function () {
             var moveCounter = 1;
             console.log(_this.researchRows[0]);
             _this.researchRows[0].myResearch = new Array();
-            for (var researchCounter = 0; researchCounter < _this.researchItems.length; researchCounter++) {
+            for (var researchCounter = 2; researchCounter < _this.researchItems.length; researchCounter++) {
                 _this.researchRows[researchRowCounter].myResearch.push(_this.researchItems[researchCounter]);
                 myResearchCounter++;
                 if (moveCounter % 3 == 0) {

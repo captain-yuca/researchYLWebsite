@@ -1,10 +1,11 @@
-<aside id="fh5co-hero"><p></p>
+<aside style="height:63%; margin: 0 auto;"><p></p>
   <ks-swiper-container [options]="example1SwipeOptions">
     <ks-swiper-slide *ngFor="let s of [1]">
 
       <div class="swiper-slide slider-text" style="background: url(images/group1.jpg) no-repeat center center; background-size: cover; vertical-align: middle; text-align:center;">
-        <div style="display: inline-block; position:relative; top:35%;" class="slider-text-inner text-center">
-        <h2>Meet Our Team</h2>
+        <div style="display: inline-block; position:relative; top:50%;" class="slider-text-inner text-center">
+        <h2><font class="stroke">Meet Our Team</font></h2>
+        <h2><font class="stroke" size="5px">Check below. To see more information about them, click them.</font></h2>
       </div>
       </div>
     </ks-swiper-slide>
@@ -16,18 +17,10 @@
 
 </aside>
 
-<div id="fh5co-work-section" class="fh5co-light-grey-section">
+<div id="fh5co-work-section" class="fh5co-light-grey-section" style="padding-top:50px; padding-bottom:50px;">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-        <h2 style="margin-bottom: 20px;
-        font-weight: 700;">Our Team</h2>
-        <p>Click on one of them to see more information.</p>
-      </div>
-    </div>
-
 <div *ngFor="let teamRow of teamRows" class="row">
-  <div *ngFor="let team of teamRow.myTeam" class="col-md-4">
+  <div *ngFor="let team of teamRow.myTeam" class="col-md-4" style="width: 20%;">
       <a data-toggle="modal" [attr.data-target]="'#'+team.id+'TeamModal'" class="item-grid text-center">
         <img class="image" src="images/{{team.imageUrl}}.jpg">
         <div class="v-align">

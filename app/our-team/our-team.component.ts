@@ -59,7 +59,7 @@ export class OurTeamComponent implements AfterViewInit{
             for(var teamCounter = 0; teamCounter < this.teamItems.length; teamCounter++){
                 this.teamRows[teamRowCounter].myTeam.push(this.teamItems[teamCounter]);
                 myTeamCounter++;
-                if(moveTeamCounter%3==0){
+                if(moveTeamCounter%5==0){
                     teamRowCounter++;
                     this.teamRows[teamRowCounter].myTeam = new Array<Team>();
                     myTeamCounter=0;

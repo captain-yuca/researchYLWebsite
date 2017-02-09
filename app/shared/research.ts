@@ -4,4 +4,5 @@ export class Research {
   description: string;
   imageUrl: string;
   website?: string;
+  machine?: boolean;
 }
