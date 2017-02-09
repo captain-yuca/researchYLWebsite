@@ -1,11 +1,11 @@
 "use strict";
-var router_1 = require('@angular/router');
-var research_component_1 = require('./research/research.component');
-var research_detail_component_1 = require('./research/research-detail.component');
-var our_team_component_1 = require('./our-team/our-team.component');
-var contact_us_component_1 = require('./contact-us/contact-us.component');
-var teaching_component_1 = require('./teaching/teaching.component');
-var home_component_1 = require('./home/home.component');
+var router_1 = require("@angular/router");
+var research_component_1 = require("./research/research.component");
+var research_detail_component_1 = require("./research/research-detail.component");
+var our_team_component_1 = require("./our-team/our-team.component");
+var contact_us_component_1 = require("./contact-us/contact-us.component");
+var teaching_component_1 = require("./teaching/teaching.component");
+var home_component_1 = require("./home/home.component");
 var appRoutes = [
     {
         path: '',
