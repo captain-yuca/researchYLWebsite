@@ -31,21 +31,21 @@ export const TEAM: Team[] = [
     },
     {
         id: 5,
-        Name: 'Manuel A. Baez Gonzalez',
+        Name: 'Manuel A. Baez',
         info: 'Computer Engineering Student, Third Year',
         description: 'Manuel is a passionate Computer Engineering Undergraduate Student. Current Vice-President of the IEEE UPRM Chapter and leader of the web development team. ',
         imageUrl: 'manuel'
     },
     {
         id: 6,
-        Name: 'Angel D. Colon Rios',
+        Name: 'Angel D. Colon',
         info: 'Electrical Engineering Student, Third Year',
         description: 'Angel has worked with NASA, he is great leader who encourages others to work hard and follow their dreams.',
         imageUrl: 'angel'
     },
     {
         id: 7,
-        Name: 'Ernesto J. Arroyo Aviles',
+        Name: 'Ernesto J. Arroyo',
         info: 'Electrical Engineering Student, Fourth Year',
         description: 'Ernesto is a multidisciplinary student, an electrical engineer with a passion for programming.',
         imageUrl: 'ernesto'
@@ -94,7 +94,7 @@ export const TEAM: Team[] = [
     },
     {
         id: 14,
-        Name: 'Edgardo R. Hernandez',
+        Name: 'Edgardo Hernandez',
         info: 'Computer Engineering Student, Fourth Year',
         description: ' ',
         imageUrl: 'edgardo'

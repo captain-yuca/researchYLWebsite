@@ -552,9 +552,9 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 2px;
 }
 #fh5co-work-section .item-grid .image {
-  height: 300px;
+  height: 200px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   background-size: cover;
   background-position: center center;
 }
@@ -567,14 +567,15 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 #fh5co-work-section .item-grid .v-align {
-  padding: 30px;
+  padding: 25px;
 }
 #fh5co-work-section .item-grid .v-align h3 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
 }
 #fh5co-work-section .item-grid .v-align h5 {
   color: rgba(0, 0, 0, 0.3);
+  font-size: 11px;
 }
 #fh5co-work-section .item-grid:hover, #fh5co-work-section .item-grid:focus {
   text-decoration: none;
