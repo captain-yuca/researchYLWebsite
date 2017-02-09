@@ -18,9 +18,9 @@
 </aside>
 
 <div id="fh5co-work-section" class="fh5co-light-grey-section">
-  <div class="container"> 
+  <div class="container">
 <div *ngFor="let teamRow of teamRows" class="row">
-  <div *ngFor="let team of teamRow.myTeam" class="col-md-4" style="width: 16.6%;">
+  <div *ngFor="let team of teamRow.myTeam" class="col-md-4" style="width: 20%;">
       <a data-toggle="modal" [attr.data-target]="'#'+team.id+'TeamModal'" class="item-grid text-center">
         <img class="image" src="images/{{team.imageUrl}}.jpg">
         <div class="v-align">

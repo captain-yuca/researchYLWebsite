@@ -84,5 +84,26 @@ export const TEAM: Team[] = [
         info: 'Mechanical Engineering Student, Third Year',
         description: ' ',
         imageUrl: 'merwin'
-    }
+    },
+    {
+        id: 13,
+        Name: 'Alejandro Rodriguez',
+        info: 'Computer Engineering Student, Third Year',
+        description: ' ',
+        imageUrl: 'alejandro'
+    },
+    {
+        id: 14,
+        Name: 'Edgardo R. Hernandez',
+        info: 'Computer Engineering Student, Fourth Year',
+        description: ' ',
+        imageUrl: 'edgardo'
+      },
+      {
+        id: 15,
+        Name: 'Jose J. Otero',
+        info: 'Computer Engineering Student, Second Year',
+        description: ' ',
+        imageUrl: 'jose'
+      }
 ];
